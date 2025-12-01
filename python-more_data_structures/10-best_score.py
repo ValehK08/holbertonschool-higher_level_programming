@@ -6,6 +6,6 @@ def best_score(a_dictionary):
     key, value = None, float('-inf')
     for i in a_dictionary:
         if a_dictionary[i] > value:
-            value = a_dictionary
+            value = a_dictionary[i]
             key = i
     return key
