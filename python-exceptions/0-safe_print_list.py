@@ -3,7 +3,7 @@
 def safe_print_list(my_list=[], x=0):
     ln = 0
     for _ in my_list:
-        ln+=1
+        ln += 1
     try:
         if x > ln:
             print(my_list[x])
