@@ -44,8 +44,8 @@ class Rectangle:
         else:
             return (self.width + self.height) * 2
 
-    def __str__(self):
+    def __str__(self, s='#'):
         for i in range(self.height):
-            self.mes *= self.width
+            self.mes = s * self.width
             self.mes += '\n'
         return self.mes
