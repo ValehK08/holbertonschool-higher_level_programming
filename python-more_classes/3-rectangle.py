@@ -5,9 +5,8 @@
 class Rectangle:
     """DEFINE IT"""
 
-    def __init__(self, width=0, height=0, mes='#'):
+    def __init__(self, width=0, height=0):
 
-        self.mes = mes
         self.width = width
         self.height = height
 
@@ -44,8 +43,9 @@ class Rectangle:
         else:
             return (self.width + self.height) * 2
 
-    def __str__(self, s='#'):
+    def __str__(self, mes=''):
+        self.mes = mes
         for i in range(self.height):
-            self.mes = s * self.width
+            self.mes += ('#' * self.width)
             self.mes += '\n'
         return self.mes
