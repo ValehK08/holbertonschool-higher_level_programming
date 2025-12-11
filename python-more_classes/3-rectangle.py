@@ -47,5 +47,6 @@ class Rectangle:
         self.mes = mes
         for i in range(self.height):
             self.mes += ('#' * self.width)
-            self.mes += '\n'
+            if i != self.height - 1:
+                self.mes += '\n'
         return self.mes
