@@ -53,7 +53,7 @@ class Rectangle:
         self.mes = mes
         for i in range(self.height):
             for k in range(self.width):
-                self.mes += Rectangle.number_of_instances
+                self.mes += Rectangle.print_symbol
             self.mes += '\n'
         return self.mes
 
