@@ -54,7 +54,8 @@ class Rectangle:
         for i in range(self.height):
             for k in range(self.width):
                 self.mes += Rectangle.print_symbol
-            self.mes += '\n'
+            if i != self.height - 1:
+                self.mes += '\n'
         return self.mes
 
     def __repr__(self):
