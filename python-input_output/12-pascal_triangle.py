@@ -13,5 +13,3 @@ def pascal_triangle(n):
             nxt.append(init[i-1][k] + init[i-1][k+1])
         nxt.append(1)
         init.append(nxt)
-    for line in init:
-        print(line)
