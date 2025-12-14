@@ -10,6 +10,10 @@
 >>> a.print_sorted()
 [0, 1, 2, 3]
 >>> b = MyList()
+>>> b
+[]
+>>> b.print_sorted()
+[]
 >>> b.append(-1)
 >>> b.append(-4)
 >>> b.append(-3)
