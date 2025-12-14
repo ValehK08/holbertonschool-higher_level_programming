@@ -1,39 +1,11 @@
 #!/usr/bin/python3
-"""
-Base
-"""
-
-
-class BaseGeometry:
-    """
-    GEOOOOMETRY
-    """
-
-    def area(self):
-        """
-        AREAAAA
-        """
-        raise Exception("area() is not implemented")
-
-    def integer_validator(self, name, value):
-        """
-        LEET'S VALIDATE
-        """
-        if type(value) is not int:
-            raise TypeError(f"{name} must be an integer")
-        if value <= 0:
-            raise ValueError(f"{name} must be greater than 0")
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
 class Rectangle(BaseGeometry):
-    """
-    Rectangle : Inherited BaseGeometry
-    """
-
     def __init__(self, width, height):
-        """INITIALIZE"""
+        self.integer_validator("width", width)
+        self.integer_validator("height", height)
+
         self.__width = width
         self.__height = height
-
-        self.integer_validator("width", self.__width)
-        self.integer_validator("height", self.__height)
