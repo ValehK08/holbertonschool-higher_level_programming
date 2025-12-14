@@ -5,6 +5,8 @@
 def pascal_triangle(n):
     """DOCUMENTED FUNCTION"""
     init = [[1]]
+    if n == 0:
+        return
     if n > 1:
         init.append([1, 1])
     for i in range(2, n):
