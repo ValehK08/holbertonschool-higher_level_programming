@@ -9,3 +9,11 @@
 [3, 1, 2, 0]
 >>> a.print_sorted()
 [0, 1, 2, 3]
+>>> b = MyList()
+>>> b.append(-1)
+>>> b.append(-4)
+>>> b.append(-3)
+>>> b
+[-1, -4, -3]
+>>> b.print_sorted()
+[-4, -3, -1]
