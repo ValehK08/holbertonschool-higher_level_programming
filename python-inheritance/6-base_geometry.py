@@ -8,10 +8,9 @@ class BaseGeometry:
     """
     GEOOOOMETRY
     """
-    
+
     def area(self):
         """
         AREAAAA
         """
-        
         raise Exception("area() is not implemented")
