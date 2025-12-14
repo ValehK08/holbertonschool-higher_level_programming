@@ -3,6 +3,7 @@
 
 
 def pascal_triangle(n):
+    """DOCUMENTED FUNCTION"""
     init = [[1]]
     if n > 1:
         init.append([1, 1])
