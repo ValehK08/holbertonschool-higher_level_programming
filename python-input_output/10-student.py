@@ -16,7 +16,7 @@ class Student:
         if isinstance(attrs, list):
             if all(isinstance(i, str) for i in attrs):
                 return {
-                    key: self.__dict__[key] for key in attrs if key in self.__dict__
+                    i: self.__dict__[i] for i in attrs if i in self.__dict__
                     }
             else:
                 return self.__dict__
