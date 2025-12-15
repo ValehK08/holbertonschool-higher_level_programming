@@ -5,6 +5,7 @@ def serialize_and_save_to_file(data, filename):
         json.dump(data, f)
 
 def load_and_deserialize(filename):
-    data = json.loads(filename)
+    with open(filename, 'r') as f:
+        data = json.loads(f)
 
     return data
