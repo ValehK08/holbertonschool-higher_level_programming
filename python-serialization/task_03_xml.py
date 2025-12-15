@@ -4,11 +4,11 @@ def serialize_to_xml(dictionary, filename):
     root = ET.Element("data")
     for key, value in dictionary.items():
         child = ET.SubElement(root, key)
+        child.set("type", type(value).__name__)
         child.text = str(value)
     
     tree = ET.ElementTree(root)
-    with open(filename, "wb") as f:
-        tree.write(f, encoding='utf-8', xml_declaration=True)
+    tree.write(filename, encoding="utf-8", xml_declaration=False)
 
 def deserialize_from_xml(filename):
     tree = ET.parse(filename)
