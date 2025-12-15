@@ -1,1 +1,1 @@
-SELECT name FROM master.sys.databases
+SHOW DATABASES;
