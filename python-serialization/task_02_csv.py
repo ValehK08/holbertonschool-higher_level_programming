@@ -6,7 +6,7 @@ def convert_csv_to_json(filename):
         # CSV to Dictionaries
         s = []
         with open(filename, mode='r', newline='', encoding="utf-8") as f:
-            ict_reader = csv.DictReader(f)
+            dict_reader = csv.DictReader(f)
 
             for row in dict_reader:
                 s.append(row)
